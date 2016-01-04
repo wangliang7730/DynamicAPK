@@ -1,6 +1,13 @@
 
 ## Introduction
 
+携程的插件化思想和阿里的Atlas有很多相同的地方，由此可见这是一套通用的技术解决方案，所谓的“正统思想”，主要包括以下几点：
+
+aapt上的改造
+gradle上的改造 
+资源ID分区 
+修改Context的getAssets方法和getResources方法，解决R文件的读取问题。
+
 What is DynamicAPK?
 
 DynamicAPK is a solution that contains framework, tool and configuration to implement multi apk/dex dynamic loading. It can help reorganize Android project configuration and development model to achieve sub-projects parallel development (in the form of android studio module), while supporting hot fix (repairing online bug), on-demand loading seldom-used modules. All dynamically loaded modules not only contain code but also contain resources if you need.
